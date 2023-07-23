@@ -26,7 +26,7 @@ CREATE TABLE `villages` (
   UNIQUE KEY `id` (`id`),
   KEY `subdistrict_id` (`subdistrict_id`),
   CONSTRAINT `villages_ibfk_1` FOREIGN KEY (`subdistrict_id`) REFERENCES `subdistrics` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9271101005 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9271101005 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `villages` (`id`, `subdistrict_id`, `name`) VALUES
 ('1101012001', '110101', 'Keude Bakongan'),

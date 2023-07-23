@@ -26,7 +26,7 @@ CREATE TABLE `subdistrics` (
   UNIQUE KEY `id` (`id`),
   KEY `regency_id` (`regency_id`),
   CONSTRAINT `subdistrics_ibfk_1` FOREIGN KEY (`regency_id`) REFERENCES `regencies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=927111 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=927111 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `subdistrics` (`id`, `regency_id`, `name`) VALUES
 ('110101', '1101', 'Bakongan'),

@@ -25,7 +25,7 @@ CREATE TABLE `regencies` (
   PRIMARY KEY (`id`),
   KEY `province_id` (`province_id`),
   CONSTRAINT `regencies_ibfk_1` FOREIGN KEY (`province_id`) REFERENCES `provinces` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9272 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9272 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `regencies` (`id`, `province_id`, `name`) VALUES
 ('1101', '11', 'KAB. ACEH SELATAN'),
