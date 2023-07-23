@@ -19,8 +19,8 @@
 
 
 CREATE TABLE `regencies` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `province_id` bigint NOT NULL,
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `province_id` bigint unsigned NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `province_id` (`province_id`),

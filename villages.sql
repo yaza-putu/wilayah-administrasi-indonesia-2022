@@ -20,7 +20,7 @@
 
 CREATE TABLE `villages` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `subdistrict_id` bigint NOT NULL,
+  `subdistrict_id` bigint unsigned NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),

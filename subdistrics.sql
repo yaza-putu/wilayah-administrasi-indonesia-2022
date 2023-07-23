@@ -19,8 +19,8 @@
 
 
 CREATE TABLE `subdistrics` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `regency_id` bigint NOT NULL,
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `regency_id` bigint unsigned NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
